@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#172437">
+  <meta name="description" content="Google Docs에서 함께 쓰고, 원하는 대본 양식으로. 시나리오의 거장 — 대본 출력 도구.">
+  <title>시나리오의 거장 — 함께 쓰고, 원하는 양식으로</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Crect width='40' height='40' rx='10' fill='%23172437'/%3E%3Cpath d='M12 28L27 13M15 24l-3 4 5-1 12-13-3-3z' fill='none' stroke='%23fafbfc' stroke-width='2'/%3E%3C/svg%3E">
+  <style>
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:#fafbfc;color:#172437;font-family:system-ui,-apple-system,"Segoe UI","Malgun Gothic",sans-serif;line-height:1.75;word-break:keep-all}a{color:inherit;text-decoration:none}a:focus-visible,summary:focus-visible{outline:3px solid #d45e35;outline-offset:5px}svg{flex-shrink:0}header{max-width:1280px;margin:auto;padding:28px 48px;display:flex;align-items:center;justify-content:space-between;gap:24px}.brand{display:flex;align-items:center;gap:10px;font-size:20px;font-weight:750;letter-spacing:-.6px}nav{display:flex;gap:30px;align-items:center;font-size:14px;font-weight:600}.status{border:1px solid #d7dfe7;padding:7px 14px;border-radius:30px;color:#657287;font-size:12px}.hero{max-width:1280px;margin:auto;padding:52px 72px 72px;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:72px;align-items:center}.eyebrow{font-size:12px;font-weight:700;color:#94614b;letter-spacing:1.2px;margin:0 0 24px}h1{font-size:clamp(42px,4.8vw,68px);line-height:1.2;letter-spacing:-3.5px;margin:0 0 28px}h1 em{color:#d45e35;font-style:normal}.lead{font-size:18px;line-height:1.85;color:#4b5c70;margin:0 0 30px}.cta{display:inline-flex;align-items:center;gap:24px;background:#172437;color:white;padding:14px 23px;border-radius:5px;font-weight:600}.cta:hover{background:#2b405e}.release{color:#68768a;font-size:13px;line-height:1.7;margin:15px 0 0}.preview{min-width:0;background:#e9edf2;border:1px solid #dbe1e8;border-radius:9px;padding:18px 20px 12px}.preview-bar{display:flex;align-items:center;justify-content:space-between;gap:12px;font-size:12px;margin-bottom:15px;color:#526174}.paper{position:relative;aspect-ratio:210/297;background:#fff;padding:10% 12%;font-family:"Batang","Noto Serif KR",serif;font-size:clamp(10px,1vw,13px);line-height:1.9;box-shadow:0 2px 8px #17243708}.paper-header{font-size:.7em;color:#737a83;border-bottom:1px solid #edf0f3;padding-bottom:14px;margin-bottom:24px}.scene{font-weight:bold;margin:0 0 20px}.action{margin:0 0 18px}.speech{width:65%;margin:0 auto 18px}.character{text-align:center;margin:0 0 4px;font-weight:bold}.dialogue{margin:0}.parenthetical{font-size:.9em;margin:0 0 3px}.transition{text-align:right;font-weight:bold;margin-top:22px}.page-number{position:absolute;bottom:5%;left:0;right:0;text-align:center;font-size:.7em}.preview-note{font-size:11px;color:#617186;text-align:center;margin:10px 0 0}.flow{max-width:1136px;margin:0 auto 65px;padding:36px 40px;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:48px;border-top:1px solid #dce2e8;border-bottom:1px solid #dce2e8}.step{color:#b35b36;font-size:12px;letter-spacing:2px}.flow h2{font-size:20px;letter-spacing:-.5px;margin:8px 0}.flow p{font-size:15px;color:#536176;margin:0}.about{max-width:1136px;margin:0 auto 70px;display:grid;grid-template-columns:1fr 1.2fr;gap:96px;padding:24px 0}.about h2{font-size:34px;line-height:1.4;letter-spacing:-1.2px;margin:0 0 20px}.about p{color:#536176;font-size:16px}.about .eyebrow{font-size:12px;color:#94614b}details{border-bottom:1px solid #dce2e8;padding:20px 0}details:first-child{border-top:1px solid #dce2e8}summary{font-size:17px;font-weight:650;cursor:pointer}details p{margin:14px 0 0}.closing{max-width:1136px;margin:0 auto 65px;padding:35px 40px;background:#edf1f5;border-radius:8px;display:flex;align-items:center;justify-content:space-between;gap:24px}.closing h2{font-size:23px;margin:0 0 5px;letter-spacing:-.5px}.closing p{margin:0;font-size:14px;color:#607087}.closing .status{white-space:nowrap;background:#fafbfc}footer{background:#172437;color:#dce5f0;padding:27px max(32px,calc((100% - 1136px)/2));display:flex;gap:35px;font-size:13px;align-items:center}footer p{margin:0;flex:1;color:#aebed0}footer a{font-size:12px}
+    @media(max-width:1100px){header{padding:24px 32px}.hero{padding:36px 32px 55px;gap:32px}.flow,.about,.closing{margin-left:32px;margin-right:32px}.about{gap:40px}.paper{font-size:11px}}
+    @media(max-width:760px){header{padding:20px 22px;align-items:flex-start;flex-direction:column;gap:15px}nav{font-size:13px;gap:22px}.brand{font-size:19px}.hero{grid-template-columns:1fr;padding:30px 22px 35px;gap:35px}h1{font-size:clamp(38px,11.5vw,54px);letter-spacing:-2px}.lead{font-size:16px}.preview{max-width:490px;width:100%;margin:auto;padding:14px}.paper{font-size:clamp(9px,2.6vw,13px)}.paper-header{margin-bottom:18px}.scene,.action,.speech{margin-bottom:14px}.flow{grid-template-columns:1fr;gap:24px;margin:0 22px 35px;padding:28px 0}.about{grid-template-columns:1fr;margin:0 22px 35px;gap:15px}.about h2{font-size:30px}.closing{margin:0 22px 35px;padding:26px;flex-direction:column;align-items:flex-start}.closing h2{font-size:22px}footer{padding:26px 22px;flex-direction:column;align-items:flex-start;gap:12px}}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+  </style>
+</head>
+<body id="top">
+  <header>
+    <a class="brand" href="#top"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="m4 20 6-6m-3 3 1-7 8-7 5 5-7 8-7 1Z"/><path d="m10 14 7-7"/></svg>시나리오의 거장</a>
+    <nav aria-label="주요 메뉴"><a href="#how">사용 방식</a><a href="#about">제품 소개</a><span class="status">공개 준비 중</span></nav>
+  </header>
+  <main>
+    <section class="hero" aria-labelledby="hero-title">
+      <div>
+        <p class="eyebrow">GOOGLE DOCS · 시나리오 출력 도구</p>
+        <h1 id="hero-title">이야기는 함께.<br>대본은 원하는<br><em>모양으로.</em></h1>
+        <p class="lead">Google Docs에서 텍스트로 함께 쓰세요.<br>원고에 맞는 양식을 고르고,<br>한글과 PDF로 이야기를 건넵니다.</p>
+        <a class="cta" href="#about">시나리오의 거장 알아보기 <span aria-hidden="true">→</span></a>
+        <p class="release">현재 개발 중입니다.<br>부가기능 다운로드는 정식 공개 후 제공됩니다.</p>
+      </div>
+      <div class="preview" aria-label="영화 대본 출력 예시">
+        <div class="preview-bar"><span>이야기가 대본이 되는 순간</span><span>영화 양식 예시</span></div>
+        <div class="paper">
+          <div class="paper-header">마지막 상영 · 첫 장면</div>
+          <p class="scene">S01. 작은 영화관 / 밤</p>
+          <p class="action">마지막 관객이 나간다. 서윤이 빈 객석에 앉아 스크린을 바라본다.</p>
+          <div class="speech"><p class="character">서윤</p><p class="dialogue">아직 끝난 건 아니지?</p></div>
+          <div class="speech"><p class="character">도현</p><p class="parenthetical">(영사실에서)</p><p class="dialogue">한 번 더 틀어 줄게.</p></div>
+          <p class="action">영사기의 불빛이 어둠을 가른다.</p>
+          <p class="transition">FADE OUT.</p>
+          <span class="page-number">1</span>
+        </div>
+        <p class="preview-note">글쓰기에 집중하세요. 대본의 모양은 따로 고릅니다.</p>
+      </div>
+    </section>
+    <section class="flow" id="how" aria-label="사용 방식">
+      <div><span class="step">01</span><h2>함께 쓰기</h2><p>익숙한 Google Docs에서 원고를 쓰고, 동료와 함께 다듬습니다.</p></div>
+      <div><span class="step">02</span><h2>양식 고르기</h2><p>씬·인물·대사를 구분한 원고에 작품과 목적에 맞는 양식을 입힙니다.</p></div>
+      <div><span class="step">03</span><h2>파일로 건네기</h2><p>대본을 미리 확인하고, 한글 HWPX와 PDF로 저장합니다.</p></div>
+    </section>
+    <section class="about" id="about" aria-labelledby="about-title">
+      <div><p class="eyebrow">원고는 그대로, 출력은 자유롭게</p><h2 id="about-title">쓰기와 꾸미기를<br>나누면 더 편하니까.</h2><p>인물명 위치를 맞추거나 대사마다 들여쓰기를 고치는 대신, 이야기의 흐름에 집중하세요. 같은 원고를 다른 대본 양식으로 출력할 수 있도록 만들고 있습니다.</p></div>
+      <div>
+        <details open><summary>어디에서 원고를 쓰나요?</summary><p>Google Docs에서 씬·인물·대사를 간단한 기호로 구분해 작성합니다. 공동 편집과 원본 이력은 Docs에서 관리합니다.</p></details>
+        <details><summary>어떤 파일로 저장할 수 있나요?</summary><p>한글에서 편집할 수 있는 HWPX와 전달·인쇄용 PDF 출력을 준비하고 있습니다. 글꼴과 프로그램에 따라 줄바꿈은 달라질 수 있습니다.</p></details>
+        <details><summary>지금 사용할 수 있나요?</summary><p>현재 개발 중이며, 이 페이지에서는 제품을 소개하고 있습니다. 부가기능 배포와 설치 안내는 공개 준비가 끝나면 제공하겠습니다.</p></details>
+      </div>
+    </section>
+    <section class="closing" aria-label="배포 안내"><div><h2>당신의 다음 장면을 위해.</h2><p>함께 쓰는 원고가 원하는 대본이 되도록 준비하고 있습니다.</p></div><span class="status">부가기능 공개 준비 중</span></section>
+  </main>
+  <footer><span>시나리오의 거장</span><p>원고는 Docs에, 출력은 나의 양식으로.</p><a href="#top">맨 위로 ↑</a></footer>
+</body>
+</html>
